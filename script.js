@@ -14,6 +14,20 @@
             }
 
             MM_map = new MM.Map(el, new wax.mm.connector(t), null, handlers);
+			
+		    var minZoom = 1;
+    var maxZoom = 8;
+    var topLeft = new MM.Location(37.075375179558346, 59.982421875);
+    var bottomRight = new MM.Location(19, 77.5);
+
+    // override map limits so that panning and zooming are constrained within these bounds:
+    MM_map.coordLimits = [
+      MM_map.locationCoordinate(topLeft).zoomTo(minZoom),
+      MM_map.locationCoordinate(bottomRight).zoomTo(maxZoom)
+    ];
+
+
+			
             MM_map.setCenterZoom({
                 lat: (l.center) ? l.center.lat : t.center[1],
                 lon: (l.center) ? l.center.lon : t.center[0]
@@ -66,6 +80,8 @@
             }
             if (callback && typeof(callback) == 'function') callback();
         });
+	
+		
         return Map;
     };
 

@@ -64,10 +64,8 @@
  .wax-tooltip {
   padding:4px 9px;
   min-width:180px;
-  max-width:280px;
   max-height:400px;
   overflow:auto;
-  width:220px\9; /* IE 8 and below */
   }
 
  .wax-legend { position:relative; }
