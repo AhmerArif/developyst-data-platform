@@ -94,7 +94,7 @@ body > div {
 
 .map {
     position: absolute;
-    height: 100%;
+    height: 94%;
     width: 100%;
     z-index: 0;
     }
@@ -110,7 +110,7 @@ body > div {
 
 #content {
 	position: absolute;
-    height: 200px;
+    height: 40px;
 	width: 100%;
 	bottom: 0px;
     background: rgb(255,255,255); /* old ie */
@@ -122,7 +122,6 @@ body > div {
     }
     
 #about {
-    margin-left: 150px;
     width: 689px;
     float: left;
     padding: 0 20px;
@@ -298,7 +297,7 @@ a.zoomer {
     right: 10px;
     height: 125px;
     overflow-x: hidden;
-    bottom: 215px;
+    bottom: 40px;
     font-size: 11px;
 	font: .9em/1.5em 'OpenSans', sans-serif;
     }
@@ -339,7 +338,7 @@ a.zoomer {
     }
 
 .wax-attribution {
-    bottom: 205px;
+    bottom: 50px;
     }
 
 .wax-share h3 {
