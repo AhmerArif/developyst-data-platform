@@ -39,7 +39,11 @@
  .share {
   clear:left;
   left:10px;
+<<<<<<< HEAD
+  top:10px;
+=======
   top:50px;
+>>>>>>> parent of e51ea9e... Create gh-pages branch via GitHub
   width:57px;
   height:18px;
   font:bold 10px/18px Arial,sans-serif;
@@ -53,7 +57,11 @@
   color:#fff;
   position: absolute;
   left: 11px;
+<<<<<<< HEAD
+  top: 45px;
+=======
   top: 85px;
+>>>>>>> parent of e51ea9e... Create gh-pages branch via GitHub
   }
 
 

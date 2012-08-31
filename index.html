@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
+<<<<<<< HEAD
     <meta charset="UTF-8" />
+<<<<<<< HEAD
+    <title>Pakistan's Evolving Education Landscape</title>
+=======
     <title>Developyst Data Platform</title>
+>>>>>>> parent of e51ea9e... Create gh-pages branch via GitHub
     <link rel="stylesheet" href="http://api.tiles.mapbox.com/mapbox.js/v0.6.4/mapbox.css" type="text/css" />
     <link rel="stylesheet" href="fonts/fonts.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="stylesheet" href="css/mapbox.share.css" type="text/css" />
+<<<<<<< HEAD
+=======
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+>>>>>>> parent of e51ea9e... Create gh-pages branch via GitHub
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 
     <script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.4/mapbox.uncompressed.js'></script>
@@ -15,6 +23,41 @@
     <script src="ext/mapbox.jquery.js"></script>
     <script src="ext/mapbox.jquery.geocoder.js"></script>
     <script src="ext/mapbox.share.js"></script>
+<<<<<<< HEAD
+
+=======
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Developyst-data-platform by AhmerArif</title>
+>>>>>>> e51ea9e8f735c6ceeadad95873f09a8467b539e4
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Developyst-data-platform</h1>
+          <h2>A mapping platform for education data in Pakistan</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/AhmerArif/developyst-data-platform/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/AhmerArif/developyst-data-platform/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/AhmerArif/developyst-data-platform" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+<<<<<<< HEAD
+    <div id="map" class="map">
+    </div>
+=======
     <script src="ext/bootstrap.min.js"></script>
 
   </head>
@@ -54,7 +97,117 @@
 -->
     <div id="map" class="map">
     </div>
+>>>>>>> parent of e51ea9e... Create gh-pages branch via GitHub
+=======
+        <hr>
 
-    <script src="script.js"></script>
+        <section id="main_content">
+          <h1>Developyst Data Platform Prototype</h1>
+
+<h2>Data Exploration</h2>
+
+<p>This prototype demonstrates a data visualization platform for education data-sets from Pakistan. </p>
+
+<p>The site is built using simple html+css+javascript with no real server-side framework. We use Mapbox.js, Tilemill and Twitter's Bootstrap Kit for most of our components. The initial basecode was forked from a branch of the data-exploration template from the Mapbox team to get a quick-start on features like layer switching.</p>
+
+<p>To make your custom base map, <a href="http://mapbox.com/plans/">sign up for MapBox</a> and <a href="http://mapbox.com/hosting/creating/">create a map</a>.</p>
+
+<p>To learn about making <a href="/tilemill">TileMill</a> maps with your own data, check out the <a href="http://mapbox.com/tilemill/docs/">TileMill documentation</a>. </p>
+
+<p>For Bootstrap check out their <a href="http://twitter.github.com/bootstrap/">Repo</a></p>
+
+<h2>HTML layout</h2>
+
+<p>The html markup for the template is in <code>index.html</code>. It's a simple html page layout. Generally, you'll want to change the content elements like <code>title</code>, <code>h1</code>, <code>div#branding</code> and <code>div#about</code>.</p>
+
+<h2>CSS styles</h2>
+
+<p>Most of the hard work on a map site build is template design implemented through CSS. This template by default is simple and clean so you can modify or replace it. This design and be completely overridden by applying new CSS styles or changing the exisiting rules in <code>style.css</code>.</p>
+
+<p>CSS rules are set in two files:</p>
+
+<ul>
+<li>
+<code>style.css</code> contains all the layout and typographic styles as well as some overridden styles for map controls, and a <a href="http://meyerweb.com/eric/tools/css/reset/">reset stylesheet</a>. Implement your design by editing this file.</li>
+<li>
+<code>map.css</code> holds the default map styles from tiles.mapbox.com embeds.</li>
+<li><code>bootstrap.css</code></li>
+</ul><h2>Javascript interaction</h2>
+
+<p>All of the external javascript libraries to make the map interactive and connect it to MapBox are stored in the <code>ext</code> directory. For this template, we're using <a href="http://modestmaps.com/">Modest Maps</a> and <a href="http://mapbox.com/wax">Wax</a> to make the map interactive, <a href="https://github.com/mapbox/easey">Easey</a> for smooth aninmated panning and zooming, and <a href="http://mapbox.com/mmg/">MMG</a> for adding markers to the map based on <a href="http://www.geojson.org/">geojson</a>-formatted data. We're also using <a href="http://jquery.com/">jQuery</a> for DOM manipulation and handling events.</p>
+
+<p>An internal javascript library, <code>script.js</code>, abstracts common map settings, and includes configuration for layer switching controls and a geocoding address search.</p>
+>>>>>>> e51ea9e8f735c6ceeadad95873f09a8467b539e4
+
+<p>Bootstrap components are all tucked away in <code>bootstrap.js</code></p>
+
+<h3>Map configuration</h3>
+
+<p>The map is added to the <code>&lt;div&gt;</code> container in <code>index.html</code> with <code>id="map"</code>. Styles to lay out the map container come from <code>class="map"</code>.</p>
+
+<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"map"</span> <span class="na">class=</span><span class="s">"map"</span><span class="nt">&gt;&lt;/div&gt;</span>
+</pre></div>
+
+<p>At the bottom of the <code>index.html</code> document, we set up the map. The <code>id</code> of the container is the first argument (<code>'map'</code>), and an object of options is the second argument. The third arugement is the name of an optional callback function that is called once the map is loaded. </p>
+
+<p>The only required option is <code>api</code>, and it should contain the API URL from MapBox. After you create a new map through your MapBox account, click <code>embed</code> on the <code>info</code> tab and copy the API URL.</p>
+
+<div class="highlight"><pre><span class="kd">var</span> <span class="nx">main</span> <span class="o">=</span> <span class="nx">Map</span><span class="p">(</span><span class="s1">'map'</span><span class="p">,</span> <span class="p">{</span> 
+    <span class="nx">api</span><span class="o">:</span> <span class="s1">'http://a.tiles.mapbox.com/v3/mapbox.map-hv50mbs9.jsonp'</span> 
+<span class="p">});</span>
+</pre></div>
+
+<h3>Layer switching</h3>
+
+<p>The <code>script.js</code> provides an easy way to toggle between layers on a map. When activated, layers will overlay the initial base map. If turned on, tooltips and legends will update to pull from the current layer. </p>
+
+<p>Layers are bound to links on the page by specifying a name for the layer in the <code>href</code> attribute of the link element and giving it a <code>data-control=layer</code> attribute.</p>
+
+<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"projects"</span> <span class="na">class=</span><span class="s">"layers"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;a</span> <span class="na">data-control=</span><span class="s">"layer"</span> <span class="na">href=</span><span class="s">"#building"</span><span class="nt">&gt;</span>Teacher Attendance, 2011<span class="nt">&lt;/a&gt;</span>
+   <span class="nt">&lt;a</span> <span class="na">data-control=</span><span class="s">"layer"</span> <span class="na">href=</span><span class="s">"#construction"</span><span class="nt">&gt;</span>PEC scores, 2011<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+
+<p>Then specify the configuration for your layers in the script at the end of <code>index.html</code>:</p>
+
+<div class="highlight"><pre><span class="nx">main</span><span class="p">.</span><span class="nx">layers</span><span class="p">({</span>
+    <span class="nx">building</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">api</span><span class="o">:</span> <span class="s1">'http://a.tiles.mapbox.com/v3/blah.jsonp'</span><span class="p">,</span>
+        <span class="nx">center</span><span class="o">:</span> <span class="p">{</span>                   <span class="c1">// Optionally reposition the map.</span>
+            <span class="nx">lat</span><span class="o">:</span> <span class="mf">38.910606275724</span><span class="p">,</span>   <span class="c1">// New center point and zoom level</span>
+            <span class="nx">lon</span><span class="o">:</span> <span class="o">-</span><span class="mf">77.00126406355</span><span class="p">,</span>   <span class="c1">// for the map. Specific either</span>
+            <span class="nx">zoom</span><span class="o">:</span> <span class="mi">14</span><span class="p">,</span>               <span class="c1">// lat and lon, zoom, or both.</span>
+            <span class="nx">ease</span><span class="o">:</span> <span class="mi">500</span>               <span class="c1">// Optional time to animimate moving</span>
+        <span class="p">}</span>                           <span class="c1">// the map in milliseconds.</span>
+    <span class="p">},</span>
+    <span class="nx">construction</span><span class="o">:</span> <span class="p">{</span> 
+        <span class="nx">api</span><span class="o">:</span> <span class="s1">'http://a.tiles.mapbox.com/v3/pmiu_teacher_attendance.jsonp'</span><span class="p">,</span>
+        <span class="nx">center</span><span class="o">:</span> <span class="p">{</span> <span class="nx">zoom</span><span class="o">:</span> <span class="mi">12</span><span class="p">,</span> <span class="nx">ease</span><span class="o">:</span> <span class="mi">1000</span> <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+
+</pre></div>
+
+<h2>Further Reading</h2>
+
+<ul>
+<li><a href="http://mapbox.com/hosting/api/">MapBox API</a></li>
+<li><a href="http://mapbox.com/wax/">MapBox Wax</a></li>
+<li><a href="http://mapbox.com/mmg/">MapBox MMG</a></li>
+<li><a href="http://mapbox.com/easey/">MapBox Easey</a></li>
+<li><a href="http://modestmaps.com/">Modest Maps</a></li>
+<li><a href="http://jquery.com/">jQuery</a></li>
+</ul>
+        </section>
+
+        <footer>
+          Developyst-data-platform is maintained by <a href="https://github.com/AhmerArif">AhmerArif</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
   </body>
 </html>
