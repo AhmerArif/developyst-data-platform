@@ -5,7 +5,7 @@ var TileJSONs = [
 ];
 
 $('#map').mapbox(TileJSONs, function(map, tiledata) {
-	map.setPanLimits([{ lat: 37.5, lon: 60.219 }, { lat: 23.339, lon: 77.933 }]);
+	map.setPanLimits([{ lat: 37.5, lon: 60.219 }, { lat: 22.339, lon: 82.933 }]);
     // Assign readable names to all layers
     map.getLayerAt(0).named('base');
     map.getLayerAt(1).named('teacher_attendance');
@@ -23,12 +23,13 @@ $('#map').mapbox(TileJSONs, function(map, tiledata) {
     // Set initial latitude, longitude and zoom level
     map.setCenterZoom({
         lat: 29.95,
-        lon: 69.994
-    }, 5);
+        lon: 68.994
+    }, 6);
 
     // Set minimum and maximum zoom levels
     map.setZoomRange(5, 17);
     // Enable share control
     mapbox.share().map(map).add();
+	map.ui.attribution.remove();
 
 });

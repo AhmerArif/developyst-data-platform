@@ -2,11 +2,12 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Pakistan's Evolving Education Landscape</title>
+    <title>Developyst Data Platform</title>
     <link rel="stylesheet" href="http://api.tiles.mapbox.com/mapbox.js/v0.6.4/mapbox.css" type="text/css" />
     <link rel="stylesheet" href="fonts/fonts.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="stylesheet" href="css/mapbox.share.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 
     <script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.4/mapbox.uncompressed.js'></script>
@@ -14,27 +15,43 @@
     <script src="ext/mapbox.jquery.js"></script>
     <script src="ext/mapbox.jquery.geocoder.js"></script>
     <script src="ext/mapbox.share.js"></script>
+    <script src="ext/bootstrap.min.js"></script>
 
   </head>
 
   <!-- Here we use `data-map` to specify the id of the div the map is in -->
+  
+  <div class="navbar navbar-static-top" style="position: absolute;">
+              <div class="navbar-inner">
+                <div class="container" style="width: auto; padding: 0 20px;">
+                  <a class="brand" href="#">Developyst</a>
+                  <ul class="nav">
+				    <li class="active"><a href="#">Data</a></li>
+					<li><a href="#">Network</a></li>
+                    <li><a href="#">Knowledge</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+  
+  <div class="about alpha60">
+    <h2 class="sidebar">Mapping Pakistan's Evolving Education Landscape</h2>
+    <p>As a developing country, Pakistan has been subject to radical economic, social, and demographic shifts. The education sector in particular has been changing rapidly as parts of the country undergo aggressive development. The exploration and analysis of these changes is made easy by the Developyst data-platform which harnesses all available statistical data to present the knowledge hidden within it. </p>
+    <p>You can use the controls below to change what you see.</p>
+    <p class="more">
+        <a href="http://bclc.uschamber.com/programs/disaster">Learn more »</a>
+    </p>
+</div>
+  
   <body data-map="map">
-    <div id="content">
-<div id="wax-attribution">test</div>
-      <div id='branding'></div>
-      <div id="about">
-        <h1>Education Data Plaform</h1>
-        <p>Herp derp</p>
 
-      </div>
-    </div>
 
-    <!-- Layer switcher -->
+<!-- Layer switcher 
     <div id="projects" class="layers" data-control="switcher">
       <a href="#teacher_attendance" data-zoom="5" data-lat="29.95" data-lon="69.994">Teacher Attendance</a>
       <a href="#student_attendance" data-zoom="5">Student Attendance</a>
     </div>
-
+-->
     <div id="map" class="map">
     </div>
 

@@ -93,6 +93,7 @@ body > div {
     }
 
 .map {
+	margin-top: 40px;
     position: absolute;
     height: 94%;
     width: 100%;
@@ -120,13 +121,40 @@ body > div {
     overflow-y: hidden;
     z-index: 2;
     }
-    
-#about {
-    width: 689px;
-    float: left;
-    padding: 0 20px;
-    border-left: 1px solid #bbb;
-    }
+
+.header,
+.footer,
+.about {
+  position:fixed;
+  z-index:1;
+  }	
+
+h2.sidebar {
+  font-weight:normal;
+  line-height:40px;
+  font-size: 26px;
+  color:#29A329;
+  }
+  
+.alpha60 {
+	/* Fallback for web browsers that doesn't support RGBa */
+	background: rgb(230, 245, 245);
+	/* RGBa with 0.6 opacity */
+	background: rgba(244, 244, 244, 0.65);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}  
+  
+.about {
+    top: 40px;
+    right: 0px;
+    bottom: 46px;
+	height:100%;
+    width: 360px;
+    padding: 40px 40px 40px 20px;
+}
 
 .layers {
     position: absolute;
