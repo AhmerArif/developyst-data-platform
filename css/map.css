@@ -33,7 +33,7 @@
  .share,
  .zoomer,
  .wax-legend,
- .wax-tooltip,
+ .map-tooltip,
  .wax-share div,
  .wax-share .twitter,
  .wax-share .facebook {
@@ -51,17 +51,17 @@
 
 /* ### Tooltips, legends ### */
  .wax-legends,
- .wax-tooltip {
+ .map-tooltip {
   position:absolute;
   z-index:999998;
   right:10px;
   }
 
  .wax-legends { bottom:10px; }
- .wax-tooltip { top:10px; }
+ .map-tooltip { top:10px; }
 
  .wax-legend,
- .wax-tooltip {
+ .map-tooltip {
   padding:4px 9px;
   min-width:180px;
   max-height:400px;

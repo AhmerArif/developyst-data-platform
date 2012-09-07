@@ -59,6 +59,7 @@
             map.draw();
         }
         map.refresh();
+		$('#myModal').modal('hide')
         return false;
     }
 
