@@ -16,6 +16,9 @@
     <script src="ext/mapbox.jquery.geocoder.js"></script>
     <script src="ext/mapbox.share.js"></script>
     <script src="ext/bootstrap.min.js"></script>
+	<script src="ext/highcharts.js"></script>
+	<script src="ext/modules/exporting.js"></script>
+    <script src="ext/sidebar.js"></script>
 
   </head>
 
@@ -94,7 +97,36 @@
 							</p>
 						  </div>
 						  <div class="tab-pane fade" id="school_availability">
-							<p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+						  		<ul class="thumbnails">
+								  <li class="span2">
+									<a href="#total_school_concentration_spatial_histogram_large" data-zoom="6" class="thumbnail">
+									  <img src="img/total_school_concentration_thumb.png" alt="">
+									      <span class='thumb-info'>
+									        <center><strong class='name'>Total School Concentration Spatial Histogram - Large</strong></center>
+											</span>
+									</a>
+								  </li>
+								  
+								  <li class="span2">
+									<a href="#total_school_concentration_spatial_histogram_small" data-zoom="6" class="thumbnail">
+									  <img src="img/total_school_concentration_thumb.png" alt="">
+									      <span class='thumb-info'>
+									        <center><strong class='name'>Total School Concentration Spatial Histogram - Small</strong></center>
+											</span>
+									</a>
+								  </li>
+								  
+								<li class="span2">
+									<a href="#total_school_concentration_heatmap" 
+									data-sidebar='<h2 class="sidebar">School Density Heatmap</h2>
+										<p>Based on data collected by <a href="http://www.giz.de/en/SID-40636ADD-BA915529/worldwide/362.html">GIZ</a>, this heatmap shows where schools are concentrated in the country. Lighter regions show areas of low school concentration while darker regions show areas with a higher number of schools. </p>' data-zoom="6" class="thumbnail">
+									  <img src="img/total_school_concentration_heatmap_thumb.png" alt="">
+									      <span class='thumb-info'>
+									        <center><strong class='name'>Total School Concentration Heatmap</strong></center>
+											</span>
+									</a>
+								  </li>
+								</ul>
 						  </div>
 						  <div class="tab-pane fade" id="school_conditions">
 							<p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
@@ -113,11 +145,15 @@
           </div>
 
   <div class="about alpha60">
-    <h2 class="sidebar">Mapping Pakistan's Evolving Education Landscape</h2>
-    <p>As a developing country, Pakistan has been subject to radical economic, social, and demographic shifts. The education sector in particular has been changing rapidly as parts of the country undergo aggressive development. The exploration and analysis of these changes is made easy by the Developyst data-platform which harnesses all available statistical data to present the knowledge hidden within it. </p>
-    <p>You can use the button below to begin.</p>
+	<div id="sidebar_content">
+		<h2 class="sidebar">Mapping Pakistan's Evolving Education Landscape</h2>
+		<p>As a developing country, Pakistan has been subject to radical economic, social, and demographic shifts. The education sector in particular has been changing rapidly as parts of the country undergo aggressive development. The exploration and analysis of these changes is made easy by the Developyst data-platform which harnesses all available statistical data to present the knowledge hidden within it. </p>
+		<p>You can use the button below to begin.</p>
+	</div>
+	<div id="container" style="min-width: 295px; height: 340px; margin: 0 auto"></div>
+
 	<hr></hr>
-            <center><a data-toggle="modal" href="#myModal" class="btn btn-large btn-success"><i class="icon-search"></i> Explore the Data</a></center>
+            <center><a data-toggle="modal" href="#myModal" class="btn btn-large"><i class="icon-search"></i> Explore the Data</a></center>
 
 </div>
   
